@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Antique Store</title>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="sourse/styles/mycss.css">
+</head>
+<script>
+  document.addEventListener("DOMContentLoaded", function () {
+      let links = document.querySelectorAll(".nav-menu a");
+      let currentPage = window.location.pathname.split("/").pop();
+
+      links.forEach(link => {
+          if (link.getAttribute("href") === currentPage) {
+              link.classList.add("active");
+          }
+      });
+  });
+</script>
+<header>
+  <nav>
+      <ul class="nav-menu">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="shop.html">Shop</a></li>
+          <li><a href="contact.html">Contact</a></li>
+           
+      </ul>
+  </nav>
+  
+</header>
+<script src="sourse/scripts/animation.js"></script>
+
+<body>
+  <section class="contact">
+    <div class="contact-container">
+       
+        <div class="contact-info">
+          <h1 class="hidden">Contact Us</h1>
+          <img src="sourse/images/pexels-ellie-burgin-1661546-26387776.jpg" alt="Antique Store" class="hidden">          
+          <p><strong>Address:</strong> 123 Vintage Street, Oldtown, USA</p>
+          <p><strong>Phone:</strong> +1 (555) 123-4567</p>
+          <p><strong>Email:</strong> contact@antiquemall.com</p>
+          <p>Visit us to explore our collection of rare antiques, vintage treasures, and historical artifacts.</p>
+        </div>
+        
+    </div>
+</section>
+
+<footer>
+    <p>&copy; 2025 Antique Mall. All Rights Reserved.</p>
+</footer>
+
+</body>
+</html>
