@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Antique Store</title>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="sourse/styles/mycss.css">
+</head>
+<script>
+    document.addEventListener("DOMContentLoaded", function () {
+        let links = document.querySelectorAll(".nav-menu a");
+        let currentPage = window.location.pathname.split("/").pop();
+
+        links.forEach(link => {
+            if (link.getAttribute("href") === currentPage) {
+                link.classList.add("active");
+            }
+        });
+    });
+</script>
+
+
+ 
+    
+
+
+ 
+<header>
+    <nav>
+        <ul class="nav-menu">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="shop.html">Shop</a></li>
+            <li><a href="contact.html">Contact</a></li>
+             
+        </ul>
+    </nav>
+    
+</header>
+
+<section class="hero">
+
+    <h1>Welcome to Antique Mall</h1>
+
+</section>
+
+<section class="history">
+    <div class="container">
+        <div class="history-content">
+            <img src="sourse/images/pexels-guado-18910389.jpg" alt="Inside Antique Mall">
+            <div class="history-text">
+                <h2>Our Story</h2>
+                <p>
+                    Founded in the heart of the city, Antique Mall has been a treasure trove for collectors and
+                    history enthusiasts for over 50 years.
+                    Our store is home to a curated selection of rare antiques, vintage finds, and timeless pieces,
+                    each with a story to tell.
+                </p>
+                <p>
+                    We believe that every piece holds a piece of history, and we take pride in connecting our
+                    customers with unique and meaningful artifacts.
+                    Step into our store and embark on a journey through time.
+                </p>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="vintage-fashion">
+    <div class="container">
+        <div class="vintage-content">
+            <div class="vintage-text">
+                <h2>Your Vintage Fashion Look Book</h2>
+                <p>
+                    Here at Antique Mall, you can find vintage clothing, shoes, jewelry, and so much more!
+                    We are constantly getting new arrivals from our vendors, so make sure you visit frequently to
+                    update your vintage closet!
+                </p>
+                <a href="shop.html" class="order-button">Order Now</a>
+
+            </div>
+            <img src="sourse/images/pexels-damla-karaagacli-42037640-14936593.jpg" alt="Vintage fashion collection">
+        </div>
+    </div>
+</section>
+
+
+
+
+<footer>
+    <p>&copy; 2025 Antique Mall. All Rights Reserved.</p>
+</footer>
+
+
+
+</html>
